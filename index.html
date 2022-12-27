@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.gallery {
+        border: 1px solid #302e41;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #e77d13;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Projects</h2>
+
+    <h4>See four of my recent CSS projects in this responsive image gallery</h4>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://codepen.io/xynchels/pen/ExRQzjj">
+          <img
+            src="images/nonas.png"
+            alt="Interactive"
+            width="600"
+            height="100"
+          />
+        </a>
+        <div class="desc">Interactive Images</div>
+        <p>
+          <a href="https://codepen.io/xynchels/pen/ExRQzjj"
+            >See Interactive Images</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="#">
+          <img
+            src="images/navbars.png"
+            alt="
+            Navbars"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Responsive Navbars</div>
+        <p><a href="https://codepen.io/xynchels/">See my CodePen</a></p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://codepen.io/xynchels/pen/GRGzzGX">
+          <img
+            src="images/buttons.png"
+            alt="Button Effects"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Button Effects</div>
+        <p>
+          <a href="https://codepen.io/xynchels/pen/GRGzzGX"
+            >View Buton Effects</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://codepen.io/xynchels/pen/bGjEGOV">
+          <img
+            src="images/citysky.png"
+            alt="Cityscape"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">CSS Cityscape Art</div>
+        <p>
+          <a href="https://codepen.io/xynchels/pen/bGjEGOV"
+            >View CSS Cityscape</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </body>
+</html>
